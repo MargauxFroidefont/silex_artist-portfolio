@@ -1,0 +1,15 @@
+{{ include('partials/header.twig') }}
+
+<div class="category-artworks">
+
+  {% for _artwork in artworks %}
+
+    <div> {{ _artwork.name }} </div>
+    <img src="{{ global.request.basepath }}/assets/images/{{ _artwork.image }}" alt="artworks" class="category-img">
+
+  {% endfor %}
+
+</div>
+
+
+{{ include('partials/footer.twig') }}

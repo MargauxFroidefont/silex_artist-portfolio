@@ -1,0 +1,172 @@
+{
+    "response": [
+    {
+        "name": "Mermay"
+        ,"serie": "Mermaids"
+        ,"image": "mermay.png"
+        ,"description": "Illustrator"
+        ,"dimension": "1200px x 1900px"
+    },
+    {
+        "name": "Nott"
+        ,"serie": "Les endormies"
+        ,"image": "nott.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    },
+    {
+        "name": "Xylogravure 1"
+        ,"serie": "Sérigraphie"
+        ,"image": "xylogravure.png"
+        ,"description": "Gravure sur bois 15 exemplaires"
+        ,"dimension": "21 cm x 29,7 cm"
+    },
+    {
+        "name": "Archimède"
+        ,"serie": "Les oiseaux"
+        ,"image": "archimede.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "21 cm x 29,7 cm"
+    },
+    {
+        "name": "Pirange Ecarlate"
+        ,"serie": "Les oiseaux"
+        ,"image": "pirange_ecarlate.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    },
+    {
+        "name": "Aegithalide"
+        ,"serie": "Les oiseaux"
+        ,"image": "aegithalide.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    },
+    {
+        "name": "Mésange"
+        ,"serie": "Les oiseaux"
+        ,"image": "mesange.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    },
+    {
+        "name": "Queen"
+        ,"serie": "Flower Power"
+        ,"image": "queen.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "30 cm x 30 cm"
+    },
+    {
+        "name": "Motif floral"
+        ,"serie": "Flower Power"
+        ,"image": "motif_floral.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "30 cm x 20 cm"
+    },
+    {
+        "name": "Éclosion"
+        ,"serie": "Flower Power"
+        ,"image": "eclosion.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "20 cm x 20 cm"
+    },
+    {
+        "name": "Des fleurs plein les mains"
+        ,"serie": "Flower Power"
+        ,"image": "des_fleurs_plein_les_mains.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "40 cm x 20 cm"
+    },
+    {
+        "name": "Éclosion 2"
+        ,"serie": "Flower Power"
+        ,"image": "eclosion_2.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "25 cm x 17 cm"
+    },
+    {
+        "name": "Des fleurs plein les mains"
+        ,"serie": "Flower Power"
+        ,"image": "des_fleurs_plein_les_mains_2.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "20 cm x 20 cm"
+    },
+    {
+        "name": "Gryffindor Place"
+        ,"serie": "Hogward"
+        ,"image": "gryffindor_room.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "29,7 cm x 21 cm"
+    },
+    {
+        "name": "Xylogravure 2"
+        ,"serie": "Sérigraphie"
+        ,"image": "xylogravure_2.png"
+        ,"description": "Gravure sur bois 15 exemplaires"
+        ,"dimension": "21 cm x 29,7 cm"
+    },
+    {
+        "name": "Expecto patronum"
+        ,"serie": "Hogward"
+        ,"image": "expecto_patronum.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "29,7 cm x 21 cm"
+    },
+    {
+        "name": "Neith"
+        ,"serie": "Les endormies"
+        ,"image": "neith.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    },
+    {
+        "name": "Hufflepuff"
+        ,"serie": "Hogward"
+        ,"image": "hufflepuff.png"
+        ,"description": "Illustrator"
+        ,"dimension": "1200px x 1900px"
+    },
+    {
+        "name": "Ravenclaw"
+        ,"serie": "Hogward"
+        ,"image": "ravenclaw.png"
+        ,"description": "Illustrator"
+        ,"dimension": "1200px x 1900px"
+    },
+    {
+        "name": "Slytherin"
+        ,"serie": "Hogward"
+        ,"image": "slytherin.png"
+        ,"description": "Illustrator"
+        ,"dimension": "1200px x 1900px"
+    },
+    {
+        "name": "Gryffindor"
+        ,"serie": "Hogward"
+        ,"image": "gryffindor.png"
+        ,"description": "Illustrator"
+        ,"dimension": "1200px x 1900px"
+    },
+    {
+        "name": "Blanche"
+        ,"serie": "Les endormies"
+        ,"image": "blanche.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    },
+    {
+        "name": "Nout"
+        ,"serie": "Les endormies"
+        ,"image": "nout.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    },
+    {
+        "name": "Nyx"
+        ,"serie": "Les endormies"
+        ,"image": "nyx.png"
+        ,"description": "Crayon de couleur"
+        ,"dimension": "15 cm x 15 cm"
+    }
+]
+}

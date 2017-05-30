@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/style/main.css">
+    </head>
+    <body>
+
+    <header class="navbar">
+      <nav class="nav">
+        <ul>
+          <li>
+            <a class="home" href="{{ url('home') }}">Cy.</a>
+          </li>
+          <li>
+            <a class="graphism" href="{{ url('graphisme', {category: "graphisme"}) }}">Graphisme</a>
+              <ul>
+                <li><a class="graphism" href="{{ url('graphisme/mermaids', {category: "graphisme", serie: "mermaids"}) }}">Mermaids</a></li>
+                <li><a class="graphism" href="{{ url('graphisme/hogwart', {category: "graphisme", serie: "hogwart"}) }}">Hogwards</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="serigraphy" href="{{ url('serigraphie', {category: "serigraphie"}) }}">Sérigraphie</a>
+              <ul>
+                <li><a class="graphism" href="{{ url('serigraphie/endormies', {category: "serigraphie", serie: "endormies"}) }}">Les endormies</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="pencil" href="{{ url('crayon', {category: "crayon"}) }}">Crayon</a>
+              <ul>
+                <li><a class="graphism" href="{{ url('crayon/oiseaux', {category: "crayon", serie: "oiseaux"}) }}">Les oiseaux</a></li>
+                <li><a class="graphism" href="{{ url('crayon/fleuries', {category: "crayon", serie: "fleuries"}) }}">Fleuries</a></li>
+                <li><a class="graphism" href="{{ url('crayon/hogwart', {category: "crayon", serie: "hogwart"}) }}">Hogwards</a></li>
+                <li><a class="graphism" href="{{ url('crayon/endormies', {category: "crayon", serie: "endormies"}) }}">Les endormies</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="series" href="{{ url('series', {category: "series"}) }}">Series</a>
+              <ul>
+                <li><a class="graphism" href="{{ url('series/endormies', {category: "series", serie: "endormies"}) }}">Les endormies</a></li>
+                <li><a class="graphism" href="{{ url('series/hogwart', {category: "series", serie: "hogwart"}) }}">Hogwards</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
