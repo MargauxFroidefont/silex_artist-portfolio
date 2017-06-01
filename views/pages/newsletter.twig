@@ -1,0 +1,25 @@
+{{ include('partials/header.twig') }}
+
+{{form_start(newsletter_form)}}
+<div class="form-group">
+      {{ form_label(newsletter_form.firstname) }}
+      {{ form_widget(newsletter_form.firstname, { attr: { class: 'form-control' } }) }}
+      <div class="text-danger">
+          {{ form_errors(newsletter_form.firstname) }}
+      </div>
+  </div>
+
+  <div class="form-group">
+      {{ form_label(newsletter_form.email) }}
+      {{ form_widget(newsletter_form.email, { attr: { class: 'form-control' } }) }}
+      <div class="text-danger">
+          {{ form_errors(newsletter_form.email) }}
+      </div>
+  </div>
+
+  <div class="form-group">
+      {{ form_widget(newsletter_form.submit, { attr: { class: 'btn btn-primary' } }) }}
+  </div>
+
+
+{{ include('partials/footer.twig') }}

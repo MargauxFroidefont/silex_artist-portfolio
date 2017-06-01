@@ -1,0 +1,73 @@
+header
+  font-family "Cocomat-Ultralight"
+  margin-top 20px
+
+nav
+  height 70px
+a
+  text-decoration none
+
+.category
+  display inline-block
+  font-size 20px
+  vertical-align top
+  width 15%
+
+  .home
+    margin-left 50px
+    font-size 55px
+    font-family "Cocomat-Light"
+    text-transform uppercase
+
+  .serie
+    font-size 15px
+    line-height 20px
+    display none
+
+.category:hover
+  a:hover
+    color #9B9B9B
+
+  .serie
+    display block
+
+@media (max-width:900px)
+
+  .category
+    width 19%
+
+    .home
+      margin-left 30px
+
+@media (max-width:650px)
+
+  .category
+    position relative
+    display block
+  .graphism
+    width 130%
+    position absolute
+    left 130px
+    top -50px
+  .category:hover
+    ul
+      position absolute
+      left 270px
+      top -50px
+      width 100px
+      height 90px
+  .serigraphy
+    width 130%
+    position absolute
+    left 130px
+    top -25px
+  .pencil
+    width 130%
+    position absolute
+    left 130px
+    top 0px
+  .series
+    width 130%
+    position absolute
+    left 130px
+    top 25px

@@ -1,5 +1,16 @@
-.category-artworks
-  display block
+.category-container
+    margin-top: 31px;
+    overflow: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+    position: relative;
 
-  .category-img
-    height 500px
+    .category-img
+        height 75vh
+        display inline
+        margin-left 10px
+
+@media (max-width:650px)
+
+    .category-container
+        margin-top 70px

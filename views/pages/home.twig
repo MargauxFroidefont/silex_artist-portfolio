@@ -1,3 +1,29 @@
 {{ include('partials/header.twig') }}
 
+<section class="container">
+
+  <div class="home-part home-artist-picture">
+    <img src="{{ global.request.basepath }}/assets/images/cy.png" alt="artist">
+  </div>
+
+  <div class="home-part home-artist-informations">
+    <h1>Yeah Cy</h1>
+    <p>Illustratice, bédéiste, Freelance super green Vandammophile</p>
+    <p>Ex <a href="madmoizelle.com">Madmoizelle</a>, vend son art sur <a href="http://lesdessinsdecy.tictail.com/products">tictail.com</a></p>
+    <nav class="home-social-networks">
+      <ul>
+        <li><a href="#"><img class="home-each-social" src="{{ global.request.basepath }}/assets/icons/facebook.svg" onmouseover="this.src='{{ global.request.basepath }}/assets/icons/facebook_hover.svg'" onmouseout="this.src='{{ global.request.basepath }}/assets/icons/facebook.svg'" alt="facebook"></a></li>
+        <li><a href="#"><img class="home-each-social" src="{{ global.request.basepath }}/assets/icons/twitter.svg" onmouseover="this.src='{{ global.request.basepath }}/assets/icons/twitter_hover.svg'" onmouseout="this.src='{{ global.request.basepath }}/assets/icons/twitter.svg'" alt="twitter"></a></li>
+        <li><a href="#"><img class="home-each-social" src="{{ global.request.basepath }}/assets/icons/instagram.svg" onmouseover="this.src='{{ global.request.basepath }}/assets/icons/instagram_hover.svg'" onmouseout="this.src='{{ global.request.basepath }}/assets/icons/instagram.svg'" alt="instagram"></a></li>
+        <li><a href="#"><img class="home-each-social" src="{{ global.request.basepath }}/assets/icons/youtube.svg" onmouseover="this.src='{{ global.request.basepath }}/assets/icons/youtube_hover.svg'" onmouseout="this.src='{{ global.request.basepath }}/assets/icons/youtube.svg'" alt="youtube"></a></li>
+      </ul>
+    </nav>
+    <div class="home-button">
+      <a href="{{ url('newsletter') }}">S'abonner à la newsletter</a>
+    </div>
+  </div>
+
+</section>
+
+
 {{ include('partials/footer.twig') }}
