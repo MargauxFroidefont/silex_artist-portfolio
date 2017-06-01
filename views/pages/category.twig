@@ -4,7 +4,9 @@
 
   {% for _artwork in artworks %}
 
+    <a href="{{ url('artwork', {artwork: _artwork.id_artwork}) }}">
       <img src="{{ global.request.basepath }}/assets/images/{{ _artwork.image }}" alt="artworks" class="category-img">
+    </a>
 
   {% endfor %}
 

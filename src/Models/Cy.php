@@ -55,4 +55,19 @@ class Cy
         return $artworks;
 
     }
+
+    public function getGoodArtwork($artwork)
+    {
+        $prepare = $this->db->prepare('
+            SELECT
+                *
+            FROM
+                artworks
+            WHERE id = :id LIMIT 1
+        ');
+        $prepare->bindValue('id', $artwork);
+        $prepare->execute();
+        $result = $prepare->fetch();
+        return $result;
+    }
 }

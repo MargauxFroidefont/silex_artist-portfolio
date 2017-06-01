@@ -77,6 +77,12 @@ $app->register(new Silex\Provider\SwiftmailerServiceProvider(), array(
     )
 ));
 
+// Middlewares
+$app->before(function() use ($app)
+{
+    $app['twig']->addGlobal('title', 'CY. ');
+});
+
 // Create `home` route
 $app
     ->get('/', function() use ($app)
@@ -153,6 +159,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodCategory($category);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -167,6 +174,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -181,6 +189,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -196,6 +205,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodCategory($category);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -210,6 +220,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -224,6 +235,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodCategory($category);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -238,6 +250,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -252,6 +265,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -266,6 +280,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -280,6 +295,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -294,6 +310,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodCategory($category);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
@@ -308,7 +325,7 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
-
+      $data['title'] = "CY - " . $category;
       return $app['twig']->render('pages/category.twig', $data);
     })
     ->assert('category', 'graphisme|serigraphie|crayon|series')
@@ -322,11 +339,29 @@ $app
 
       $artworksModel = new \Site\Models\Cy($app['db']);
       $data['artworks'] = $artworksModel->getGoodSerie($category, $serie);
+      $data['title'] = "CY - " . $category;
 
       return $app['twig']->render('pages/category.twig', $data);
     })
     ->assert('category', 'graphisme|serigraphie|crayon|series')
     ->bind('series/hogwart');
+
+// Create `artwork` route
+$app
+    ->get('/{artwork}', function($artwork) use ($app)
+    {
+      $data = array();
+
+      $artworkModel = new \Site\Models\Cy($app['db']);
+      $data['artwork'] = $artworkModel->getGoodArtwork($artwork);
+      if(!$data['artwork']) {
+          $app->abort(404);
+      }
+      $data['title'] = "CY - " . $data['artwork']->name;
+
+      return $app['twig']->render('pages/artwork.twig', $data);
+    })
+    ->bind('artwork');
 
 // Error handler
 $app
