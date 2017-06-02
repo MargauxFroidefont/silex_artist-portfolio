@@ -1,10 +1,25 @@
 {{ include('partials/header.twig') }}
 
-<h2>{{ artwork.name }}</h2>
-<img src="{{ global.request.basepath }}/assets/images/{{ artwork.image }}">
-<p>{{ artwork.serie }}</p>
-<p>{{ artwork.description }}</p>
-<p>{{ artwork.width }}</p>
+<section class="container">
+
+  <div class="artwork-part artwork-picture">
+    <img src="{{ global.request.basepath }}/assets/images/{{ artwork.image }}">
+  </div>
+
+  <div class="artwork-part artwork-informations">
+
+    <h1>{{ artwork.name }}</h1>
+    <p>{{ artwork.serie }}</p>
+    <p>{{ artwork.description }}</p>
+    <p class="artwork-part-artwork-width">{{ artwork.width }}</p>
+
+    <div class="artwork-button">
+      <a href="{{ url('home') }}">Retour à l'accueil</a>
+    </div>
+
+  </div>
+
+</section>
 
 
 {{ include('partials/footer.twig') }}

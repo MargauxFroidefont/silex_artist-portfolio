@@ -70,4 +70,5 @@ class Cy
         $result = $prepare->fetch();
         return $result;
     }
+
 }

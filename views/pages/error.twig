@@ -1,5 +1,8 @@
 {{include('partials/header.twig')}}
 
-<h1>Error {{ code }}</h1>
+<div class="error-content">
+  <h1>Une erreur {{ code }} s'est produite !</h1>
+  <a class="error-button" href="{{ url('home') }}">Retourner à l'accueil</a>
+</div>
 
 {{include('partials/footer.twig')}}
