@@ -6,11 +6,13 @@ class Cy
 {
     public $db;
 
+    // Construct
     public function __construct($db)
     {
         $this->db = $db;
     }
 
+    // Get Category
     public function getGoodCategory($category)
     {
         $prepare = $this->db->prepare('
@@ -32,6 +34,7 @@ class Cy
 
     }
 
+    // Get Serie in the good category
     public function getGoodSerie($category, $serie)
     {
         $prepare = $this->db->prepare('
@@ -56,6 +59,7 @@ class Cy
 
     }
 
+    // Get more informations about an artwork  
     public function getGoodArtwork($artwork)
     {
         $prepare = $this->db->prepare('

@@ -1,4 +1,5 @@
 <?php
+
 // Middlewares
 $app->before(function() use ($app)
 {

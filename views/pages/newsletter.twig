@@ -1,9 +1,13 @@
+<!-- Include -->
 {{ include('partials/header.twig') }}
 
+<!-- Newsletter content -->
 <h1 class="form-title">Inscrivez-vous à la newsletter !</h1>
 
+<!-- Form -->
 {{form_start(newsletter_form)}}
-<div class="form-group">
+
+  <div class="form-group">
       {{ form_label(newsletter_form.firstname) }}
       {{ form_widget(newsletter_form.firstname, { attr: { class: 'form-control' } }) }}
       <div class="text-danger">
@@ -23,5 +27,5 @@
       {{ form_widget(newsletter_form.submit, { attr: { class: 'form-button' } }) }}
   </div>
 
-
+<!-- Include -->
 {{ include('partials/footer.twig') }}

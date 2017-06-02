@@ -1,5 +1,6 @@
 <?php
 
+// Components
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
@@ -15,12 +16,12 @@ $app
     ->bind('home');
 
 // Create `newsletter` route
-
 $app
     ->match('/newsletter', function(Request $request) use ($app)
     {
       $data = array();
 
+      // Create newsletter form
       $formBuilder = $app['form.factory']->createBuilder();
 
       $formBuilder->setMethod('post');
@@ -53,6 +54,7 @@ $app
 
       $form->handleRequest($request);
 
+      // Send newsletter email
       if ($form->isSubmitted() && $form->isValid()) {
         $formData = $form->getData();
         $message = new \Swift_Message();

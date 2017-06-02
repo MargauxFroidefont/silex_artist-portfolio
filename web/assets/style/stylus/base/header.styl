@@ -27,9 +27,14 @@ a
 .category:hover
   a:hover
     color #9B9B9B
+    transition color .1s ease-out
 
   .serie
     display block
+
+.category-padding
+  padding-top 20px
+  z-index 10
 
 @media (max-width:900px)
 
@@ -45,7 +50,7 @@ a
     position relative
     display block
   .graphism
-    width 130%
+    width 200%
     position absolute
     left 130px
     top -50px
@@ -56,18 +61,20 @@ a
       top -50px
       width 100px
       height 90px
+  .category-padding
+    padding-top 0px
   .serigraphy
-    width 130%
+    width 200%
     position absolute
     left 130px
     top -25px
   .pencil
-    width 130%
+    width 200%
     position absolute
     left 130px
     top 0px
   .series
-    width 130%
+    width 200%
     position absolute
     left 130px
     top 25px

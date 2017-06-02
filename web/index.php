@@ -70,6 +70,7 @@ $app->register(new Silex\Provider\SwiftmailerServiceProvider(), array(
     )
 ));
 
+// Routes 
 require_once('../src/Middlewares/middlewares.php');
 
 require_once('../src/Routes/routes.php');

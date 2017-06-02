@@ -20,26 +20,32 @@
     </head>
     <body>
 
+    <!-- Navbar content -->
     <header class="navbar">
+
       <nav class="nav">
         <ul>
+
           <li class="category">
             <a class="home" href="{{ url('home') }}">Cy.</a>
           </li>
-          <li class="category">
+
+          <li class="category category-padding">
             <a class="graphism" href="{{ url('graphisme', {category: "graphisme"}) }}">Graphisme</a>
               <ul>
                 <li class="serie"><a href="{{ url('graphisme/hogwart', {category: "graphisme", serie: "hogwart"}) }}">Hogwart</a></li>
                 <li class="serie"><a href="{{ url('graphisme/mermaids', {category: "graphisme", serie: "mermaids"}) }}">Mermaids</a></li>
               </ul>
-            </li>
-            <li class="category">
+          </li>
+          
+          <li class="category category-padding">
               <a class="serigraphy" href="{{ url('serigraphie', {category: "serigraphie"}) }}">Sérigraphie</a>
               <ul>
                 <li class="serie"><a class="graphism" href="{{ url('serigraphie/endormies', {category: "serigraphie", serie: "endormies"}) }}">Les endormies</a></li>
               </ul>
-            </li>
-            <li class="category">
+          </li>
+
+          <li class="category category-padding">
               <a class="pencil" href="{{ url('crayon', {category: "crayon"}) }}">Crayon</a>
               <ul>
                 <li class="serie"><a href="{{ url('crayon/oiseaux', {category: "crayon", serie: "oiseaux"}) }}">Les oiseaux</a></li>
@@ -47,14 +53,18 @@
                 <li class="serie"><a href="{{ url('crayon/hogwart', {category: "crayon", serie: "hogwart"}) }}">Hogwart</a></li>
                 <li class="serie"><a href="{{ url('crayon/endormies', {category: "crayon", serie: "endormies"}) }}">Les endormies</a></li>
               </ul>
-            </li>
-            <li class="category">
+          </li>
+
+
+          <li class="category category-padding">
               <a class="series" href="{{ url('series', {category: "series"}) }}">Series</a>
               <ul>
                 <li class="serie"><a href="{{ url('series/endormies', {category: "series", serie: "endormies"}) }}">Les endormies</a></li>
                 <li class="serie"><a href="{{ url('series/hogwart', {category: "series", serie: "hogwart"}) }}">Hogwart</a></li>
               </ul>
-            </li>
-          </ul>
-        </nav>
-      </header>
+          </li>
+
+        </ul>
+      </nav>
+
+    </header>

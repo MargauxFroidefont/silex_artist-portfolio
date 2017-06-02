@@ -1,11 +1,10 @@
 <?php
 
-
 // Connexion variables
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'h2_silex_cy');
 define('DB_USER', 'root');
-define('DB_PASS', 'root'); // '' par défaut sur windows // '' par défaut sur windows
+define('DB_PASS', 'root'); 
 
 try
 {

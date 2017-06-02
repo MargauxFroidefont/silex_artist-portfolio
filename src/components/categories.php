@@ -1,5 +1,7 @@
 <?php
 
+  // Include categories Json in database
+
   include 'config.php';
 
   $query = $pdo->query('SELECT * FROM artworks');

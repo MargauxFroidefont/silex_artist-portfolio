@@ -1,4 +1,6 @@
 <?php
+
+// Components
 use Symfony\Component\HttpFoundation\Request;
 
 // Error handler

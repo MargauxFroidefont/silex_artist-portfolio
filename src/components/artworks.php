@@ -1,5 +1,7 @@
 <?php
 
+  // Include artworks Json in database
+  
   include 'config.php';
 
   $query = $pdo->query('SELECT * FROM artworks');
